@@ -1,5 +1,7 @@
 CREATE DATABASE IF NOT EXISTS max_zvaryh_db_lab3;
 USE max_zvaryh_db_lab3;
+CREATE USER 'Masyanya'@'%' IDENTIFIED BY 'Max0993319943';
+GRANT SELECT ON *.* TO 'Masyanya'@'%';
 
 DROP TABLE IF EXISTS chat_has_message;
 DROP TABLE IF EXISTS message;
