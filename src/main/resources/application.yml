@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://datasource:3306/max_zvaryh_db_lab3?createDatabaseIfNotExist=true&useSSL=false
+    url: jdbc:mysql://datasource:3306/max_zvaryh_db_lab3?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false
     username: Masyanya
     password: Max0993319943
     driver-class-name: com.mysql.jdbc.Driver
@@ -9,6 +9,7 @@ spring:
     show-sql: true
     hibernate:
       # Hibernate ddl auto (validate, create, create-drop, update)
+      dialect: org.hibernate.dialect.MySQL57Dialect
       ddl-auto: update
       # Naming strategy
       naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy

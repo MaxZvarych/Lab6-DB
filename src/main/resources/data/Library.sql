@@ -1,7 +1,7 @@
 CREATE DATABASE IF NOT EXISTS max_zvaryh_db_lab3;
 USE max_zvaryh_db_lab3;
-CREATE USER 'Masyanya'@'%' IDENTIFIED BY 'Max0993319943';
-GRANT SELECT ON *.* TO 'Masyanya'@'%';
+-- CREATE USER 'Masyanya'@'%' IDENTIFIED BY 'Max0993319943';
+-- GRANT SELECT ON *.* TO 'Masyanya'@'%';
 
 DROP TABLE IF EXISTS chat_has_message;
 DROP TABLE IF EXISTS message;
@@ -12,7 +12,7 @@ DROP TABLE IF EXISTS audio_file;
 DROP TABLE IF EXISTS chat;
 DROP TABLE IF EXISTS chat_style;
 DROP TABLE IF EXISTS user;
-DROP TABLE IF EXISTS discord;
+DROP TABLE IF EXISTS Discord;
 
 CREATE TABLE user (
 `id` INT AUTO_INCREMENT UNIQUE NOT NULL,
@@ -130,7 +130,7 @@ ALTER TABLE audio_file
 	FOREIGN KEY (`chat_id` , `chat_style_name`)
 	REFERENCES `chat` (`id` , `chat_style_name`);
 
-INSERT INTO discord(update_available,settings) VALUES
+INSERT INTO Discord(update_available,settings) VALUES
 ('0', 'first_version'),('1', 'first_version'),('0', 'first_version'),('1', 'first_version'),('0', 'first_version'),('1', 'first_version'),
 ('0', 'first_version'),('1', 'first_version'),('0', 'first_version'),('0', 'first_version');
 
@@ -160,35 +160,3 @@ INSERT INTO media_file(file_type,chat_id) VALUES
 
 INSERT INTO user_has_chat(user_id, user_nickname, chat_id, chat_name,chat_style_name) VALUES
 ('1', 'Masyanya#0895', '1', 'LPML2','private'),('2', 'Taras#0887', '5', 'LPML3','private'),('3', 'Petro#0895', '2', 'LPML4','private'),('4', 'Olexa', '6', 'LPML5','private');
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
