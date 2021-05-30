@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:mysql://datasource:3306/max_zvaryh_db_lab3?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false
+    url: jdbc:mysql://localhost:3306/max_zvaryh_db_lab3?allowPublicKeyRetrieval=true&createDatabaseIfNotExist=true&useSSL=false
     username: Masyanya
     password: Max0993319943
     driver-class-name: com.mysql.jdbc.Driver
